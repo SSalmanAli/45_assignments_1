@@ -1,7 +1,3 @@
 let errorArray : string[] = ["salman" , "arman" , "roman" , "89" ];
-
-errorArray.pop()
-
-console.log(errorArray)
-
-
+console.log(errorArray[7]) // creating indexing error
+console.log(errorArray[3]) // fixing the code
