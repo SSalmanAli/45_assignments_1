@@ -1,5 +1,7 @@
-let personName = "\t\t\t\tBrock\n\t\t\t\t\t\t\t\t\tLesner";
+let personName = "\t\t\t\tBrock\n\t\t\t\t\t\t\t\t\t";
 
 console.log(personName);
 
-console.log("Brock Lesner");
+personName = personName.trim()
+
+console.log(personName);
