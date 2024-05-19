@@ -1,33 +1,19 @@
-let guests = ["Barack Obama" , "Waqar Zaka" , "Tommy Shelby"]  
+let guests = ['Kayne West','Barack Obama','Albert Einstein','Mukesh Ambani','Shelby Shelby','Elon Musk']
 
-let unableToAttend = "Waqar Zaka";
-//console.log(`Mr.${unableToAttend} can\'t make it to dinner.`);
+console.log("sorry guys now i can only invite only 2 people on dinner")
 
-
-let newGuest = "Mukesh Ambani"
-guests[guests.indexOf(unableToAttend)] = newGuest
-
-// guests.forEach(x => console.log(`Mr.${x} you are invited to dinner`));
-
-//console.log('Good News everyone I have found a bigger table');
-
-guests.unshift("Kayne West")   // to add item in the beginning 
-guests.splice(guests.length / 2, 0, "Albert Einstein") // to add item in middle
-guests.push("Elon Musk") // to add item in the last of array
+console.log(guests.pop(), "sorry i can't invite you to dinner")
+console.log(guests.pop(), "sorry i can't invite you to dinner")
+console.log(guests.pop(), "sorry i can't invite you to dinner")
+console.log(guests.pop(), "sorry i can't invite you to dinner")
 
 
-// guests.forEach(y =>console.log(`Mr.${y} you are invited to dinner.`));
 
-console.log("Sadly I can now only invite two people to dinner")
+for (let i = 0 ; i < guests.length ; i++)
+    {
+        console.log(guests[i]+ " you are still invited")
+    }
 
-while (guests.length > 2){
-    guests.pop()
-}
+guests.splice(0)
 
-guests.forEach(y =>console.log(`Mr.${y} you are still invited to dinner.`))
-
-
-while (guests.length > 0){
-    guests.pop()
-}
-console.log(guests);
+console.log(guests)
