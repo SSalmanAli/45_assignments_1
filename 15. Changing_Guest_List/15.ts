@@ -1,10 +1,14 @@
 let guests = ["Barack Obama" , "Waqar Zaka" , "Shelby Shelby"]  
 
-let unableToAttend = "Waqar Zaka";
-console.log(`Mr.${unableToAttend} can\'t make it to dinner.`);
+
+guests.splice(1 , 1 , "mukesh ambani")
+
+//console.log(guests)
 
 
-let newGuest = "Mukesh Ambani"
-guests[guests.indexOf(unableToAttend)] = newGuest
+for (let i = 0 ; i < guests.length ; i++) {
+    console.log(guests[i])
+}
 
-guests.forEach(x => console.log(`Mr.${x} you are invited to dinner.`));
+
+console.log("waqar zaka cannot make it to the dinner")
